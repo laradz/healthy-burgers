@@ -1,31 +1,18 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div id="app" class="container mx-auto w-1/3 md:w-full">
+    <div class="py-3 flex flex-col items-center justify-center">
+      <h1 class="text-5xl font-bold text-green-500">🍔 Healthy <span class="text-orange-500">Burgers</span>.</h1>
+      <p class="italic text-gray-700">Your favorite healthy burgers straight to your place</p>
+      <div class="mt-4 border-b w-2/3 border-gray-400"></div>
     </div>
-    <router-view/>
+    <router-view class="mt-3" />
   </div>
 </template>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
+<script>
+  export default {
+    name: 'app',
+  }
+</script>
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+<style src="./assets/css/tailwind.css"></style>
